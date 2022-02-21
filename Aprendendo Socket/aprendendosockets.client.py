@@ -5,7 +5,7 @@ PORT = 50000
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.connect((HOST, PORT))
-server.sendall(str.encode('Dados Enviados'))
+server.sendall(str(input("Digite sua Mensagem")).encode())
 data = server.recv(2048)
 
 print("Mensagem ecoada: ", data.decode())
