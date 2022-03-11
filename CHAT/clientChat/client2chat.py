@@ -14,7 +14,7 @@ def main():
     connected = True
     while connected:
 
-        msg = input("Digite sua mensage: ")
+        msg = input("Digite sua mensagem: ")
 
         client.send(msg.encode('utf-8'))
 
