@@ -210,7 +210,7 @@ class GUI:
                     self.textCons.config(state=tk.DISABLED)
                     self.textCons.config(state=tk.NORMAL)
                     self.textCons.insert(
-                        tk.END, "😍 o " + str(send_user) + " 😍 enviou: " + file_name + " \nobrigado meuDEUs\n")
+                        tk.END, "o " + str(send_user) + "enviou: " + file_name + " \nEnviado\n")
                     self.textCons.config(state=tk.DISABLED)
                     self.textCons.see(tk.END)
 
@@ -242,6 +242,6 @@ class GUI:
 
 
 if __name__ == "__main__":
-    ip_address = "localhost"
+    ipAddress = "localhost"
     port = 12345
-    g = GUI(ip_address, port)
+    g = GUI(ipAddress, port)
